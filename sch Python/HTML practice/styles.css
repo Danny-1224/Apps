@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'montserrat','Bai jamjuree', Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    background-color: #fff;
+}
+
+#greet {
+    font-family:'Bai Jamjuree';
+    font-size: 65px;
+    line-height: 70px;
+    font-weight: 600;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 50%;
+    padding: 5px;    margin-left: 100px;
+    height: 82px;
+    margin-right: 100px;
+    border: #ff6400;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 100px;
+    background-color: #ec750600;
+    line-height: 20px;
+    box-shadow: 0 0 10px (250, 225, 255, 0.1);
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    background: url('image/ripple.webp') no-repeat left center;
+    background-size: 25px, 50px;
+    padding-left: 40px; /* Adjust padding to make space for the image */
+}
+
+
+#logo-container {
+    display: flex;
+    gap: 20px;
+    margin-left: 10px;
+} 
+
+
+#nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 7px;
+    color: #ff6400;
+    padding-right: 10px;
+    line-height: 50px;
+}
+#full {
+    display: flex; 
+    margin-right: 100px;
+    margin-top: 45px;
+    margin-left: 100px;
+}
+
+#my-pics{
+    width: 47%;
+    height: 25%;
+    padding-left: 20px;
+}
+
+#withoutpics {
+
+    justify-content: space-between;
+    font-size: 24px;
+    width: 50%;
+    height: 50%;
+    align-items: center;
+    line-height: 47px;
+}
+
+#audit {
+    border: none;
+    font-family: 'Bai Jamjuree';
+    font-weight: 600;
+    width: 65%;
+    padding: auto;
+    height: 60px;
+    color: white;
+    font-size: 25px;
+    margin-top: 40px;
+    margin-bottom: 0;
+    background-color: #ff6400;
+}
+
+#brand-voice {
+    color: #ff6400ff;
+}
+
+
+
+#card1 , #card2, #card3 {
+    display: flex; 
+    border-bottom: #ff6400 ;
+    border-style: solid;
+    border-left: transparent;
+    border-right: transparent;
+    border-top: transparent;
+    border-width: 1px;
+    margin-top: 45px;
+    margin-left: 100px;
+}
+
+#card3 {
+        display: flex; 
+        border-bottom: transparent;
+        border-style: solid;
+        border-left: transparent;
+        border-right: transparent;
+        border-top: transparent;
+        margin-left: 100px;
+        margin-top: 45px;
+}
+
+.image {
+    width: 30%;
+    height: 30%;
+    margin-bottom: 65px;
+
+}
+
+
+
+#whatido {
+    justify-content: space-between;
+    gap: 0;
+    margin-right: 100px;
+}
+
+#yourbrand {
+    font-size: 48px;
+    line-height: 40px;
+    font-weight: 600;
+    font-family: 'Bai Jamjuree';
+}
+
+#yourbrand+p{
+    line-height: 35px;
+}
+
+.fact {
+    color: #000000;
+}
+
+.pre {
+    color: #ff6400;
+}
+
+#but2 {  
+    border: none;
+    font-family: 'Bai Jamjuree';
+    font-weight: 600;
+    width: 80%;
+    padding: auto;
+    height: 60px;
+    color: white;
+    font-size: 25px;
+    margin-top: 40px;
+    margin-bottom: 0;
+    background-color: #000000;
+}
+
+#review {
+    display: flex;  
+    gap: 100px;
+    line-height: 15px;
+    font-size: 1.3em;
+}
+
+
+#Whatioffer {
+    padding-left: 40px;
+    padding-right: 0;
+}
+
+
+#pro li {
+    font-family:'Bia jamjuree';
+    align-items: center;
+}
+
+#work-experience {
+    align-items: center;
+    margin-left: auto;
+    margin-left: auto;
+}
+
+
+#sub-services {
+    display: flex;
+    gap: 40px;
+}
+
+

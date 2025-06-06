@@ -1,0 +1,27 @@
+           
+               
+/*customising your list*/ 
+ /*Editing the unordered list*/                             
+ul {
+    display: flex;
+    justify-content: center;
+    background:  url('https://www.w3schools.com/cssref/paper.gif') repeat contain;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/*Editing the list within ul*/
+ul li {
+    margin-right: 10px;
+}
+
+/*Editing the custom bullet*/
+ul li::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    background: url('https://www.w3schools.com/cssref/sqpurple.gif') no-repeat center/cover;
+    border-radius: 50%;
+}
