@@ -126,6 +126,31 @@
 // }
 // console.log(addUntilZero(5, 7, -2, 0, 10)); // Output: 10
 
+//Converter from base 10 to base n
+function baseConverter(convert, n) {
+    if (n < 2 || n > 36) {
+        throw new Error("Base must be between 2 and 36");}
+    if (convert === 0) return "0";
+    let result = "";
+    while (convert > 0) {
+        let remainder = convert % n;
+        if (remainder < 10) {
+            result = remainder.toString() + result;
+        } else {
+            result = String.fromCharCode(remainder - 10 + 'A'.charCodeAt(0)) + result;
+        }
+        convert = Math.floor(convert / n);
+    }
+    return result;
+}
+
+// let baseConverter = (convert,n)=>{
+//     while(convert>=0){
+//         convert%n
+//         convert = Math.floor(convert/n);
+//     }
+// }
+
 
 
 // Using template literals
