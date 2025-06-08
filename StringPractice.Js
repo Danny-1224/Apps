@@ -111,7 +111,23 @@
 // };
 // console.log(vandCChecker("rgtsrf!@")); // Output: { vowels: 0, consonants: 6 }
 
-    
+
+
+// Write a function that keeps summing numbers passed in as arguments until a 0 is encountered, then returns the total.
+// Example:
+// addUntilZero(5, 7, -2, 0, 10); // Output: 10
+// function addUntilZero(...args) {
+//     let total = 0;
+//     for (let num of args) {
+//         if (num === 0) break;
+//         total += num;
+//     }
+//     return total;
+// }
+// console.log(addUntilZero(5, 7, -2, 0, 10)); // Output: 10
+
+
+
 // Using template literals
 
 
