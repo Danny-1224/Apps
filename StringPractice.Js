@@ -53,7 +53,7 @@ console.log(x.concat(" How are you?")); // Output: " Hello, World!  How are you?
 console.log(x.concat(" How are you?").length); // Output: 32
 console.log(x.repeat(2)); // Output: " Hello, World!  Hello, World! "
 console.log(x.repeat(0)); // Output: ""
-console.log(x.repeat()); // Output: ""
+console.log(x.repeat(-1)); // Output: ""
 console.log(x.repeat(1.5)); // Output: " Hello, World!  "
 console.log(x.padStart(20, "*")); // Output: "***** Hello, World! "
 console.log(x.padEnd(20, "*")); // Output: " Hello, World! *****"
@@ -83,4 +83,7 @@ console.log(x.split(" ").join("     ")); // Output: "Hello,     World! "
 console.log(x.split(" ").join("      ")); // Output: "Hello,      World! "
 console.log(x.split(" ").join("       ")); // Output: "Hello,       World! "
 console.log(x.split(" ").join("        ")); // Output: "Hello,        World! "
+
+// Using template literals
+
 
