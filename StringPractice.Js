@@ -141,8 +141,34 @@ function baseConverter(convert, n) {
         }
         convert = Math.floor(convert / n);
     }
-    return result;
+    return +result;
 }
+console.log(typeof(baseConverter(10, 2))); // Output: "1010"
+
+// Arithemetic Operation in different bases
+let baseArithemetic = (n,arithemetic,...numbers)=>{
+    if("add".toLocaleLowerCase===arithemetic){
+            let Add = (...numbers)=>{
+                let total = numbers[0];
+                for(let i of numbers){
+                total +=i}
+            return total-numbers[0]
+            } 
+            return baseConverter(Add,n)
+    }
+    else if("multiply".toLocaleLowerCase = arithemetic){
+        let multiply = (...numbers)=>{
+            let total = numbers[0];
+            for(let i of numbers){
+                total *=i}
+                return total/numbers[0]
+            } 
+            return baseConverter(multiply,n)
+    }
+}
+
+console.log(baseArithemetic(3,"add",1,2,4))
+
 
 // let baseConverter = (convert,n)=>{
 //     while(convert>=0){
