@@ -95,11 +95,21 @@
 // }
 // console.log(Vowelchecker("rgtsrf"));
 
-let consonantChecker = (str) => {
-    let consonants = str.match(/[^aeiouAEIOU\s\d\W]/g);
-    return consonants ? consonants.length : 0;
-}
-console.log(consonantChecker("rgtsrf!@")); // Output: 6
+// let consonantChecker = (str) => {
+//     let consonants = str.match(/[^aeiouAEIOU\s\d\W]/g);
+//     return consonants ? consonants.length : 0;
+// }
+// console.log(consonantChecker("rgtsrf!@")); // Output: 6
+
+// let vandCChecker = (str) => {
+//     let vowels = str.match(/[aeiouAEIOU]/g);
+//     let consonants = str.match(/[^aeiouAEIOU\s\d\W]/g);
+//     return {
+//         vowels: vowels ? vowels.length : 0,
+//         consonants: consonants ? consonants.length : 0
+//     };
+// };
+// console.log(vandCChecker("rgtsrf!@")); // Output: { vowels: 0, consonants: 6 }
 
     
 // Using template literals
