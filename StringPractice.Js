@@ -127,58 +127,75 @@
 // console.log(addUntilZero(5, 7, -2, 0, 10)); // Output: 10
 
 //Converter from base 10 to base n
-function baseConverter(convert, n) {
-    if (n < 2 || n > 36) {
-        throw new Error("Base must be between 2 and 36");}
-    if (convert === 0) return "0";
-    let result = "";
-    while (convert > 0) {
-        let remainder = convert % n;
-        if (remainder < 10) {
-            result = remainder.toString() + result;
-        } else {
-            result = String.fromCharCode(remainder - 10 + 'A'.charCodeAt(0)) + result;
-        }
-        convert = Math.floor(convert / n);
-    }
-    return +result;
-}
-console.log(typeof(baseConverter(10, 2))); // Output: "1010"
+// function baseConverter(convert, n) {
+//     if (n < 2 || n > 36) {
+//         throw new Error("Base must be between 2 and 36");}
+//     if (convert === 0) return "0";
+//     let result = "";
+//     while (convert > 0) {
+//         let remainder = convert % n;
+//         if (remainder < 10) {
+//             result = remainder.toString() + result;
+//         } else {
+//             result = String.fromCharCode(remainder - 10 + 'A'.charCodeAt(0)) + result;
+//         }
+//         convert = Math.floor(convert / n);
+//     }
+//     return +result;
+// }
+// console.log(typeof(baseConverter(10, 2))); // Output: "1010"
 
-// Arithemetic Operation in different bases
-let baseArithemetic = (n,arithemetic,...numbers)=>{
-    if("add".toLocaleLowerCase===arithemetic){
-            let Add = (...numbers)=>{
-                let total = numbers[0];
-                for(let i of numbers){
-                total +=i}
-            return total-numbers[0]
-            } 
-            return baseConverter(Add,n)
-    }
-    else if("multiply".toLocaleLowerCase = arithemetic){
-        let multiply = (...numbers)=>{
-            let total = numbers[0];
-            for(let i of numbers){
-                total *=i}
-                return total/numbers[0]
-            } 
-            return baseConverter(multiply,n)
-    }
-}
-
-console.log(baseArithemetic(3,"add",1,2,4))
-
-
-// let baseConverter = (convert,n)=>{
-//     while(convert>=0){
-//         convert%n
-//         convert = Math.floor(convert/n);
+// // Arithemetic Operation in different bases
+// let baseArithemetic = (n,arithemetic,...numbers)=>{
+//     if("add".toLocaleLowerCase===arithemetic){
+//             let Add = (...numbers)=>{
+//                 let total = numbers[0];
+//                 for(let i of numbers){
+//                 total +=i}
+//             return total-numbers[0]
+//             } 
+//             return baseConverter(Add,n)
+//     }
+//     else if("multiply".toLocaleLowerCase = arithemetic){
+//         let multiply = (...numbers)=>{
+//             let total = numbers[0];
+//             for(let i of numbers){
+//                 total *=i}
+//                 return total/numbers[0]
+//             } 
+//             return baseConverter(multiply,n)
 //     }
 // }
 
+// console.log(baseArithemetic(3,"add",1,2,4))
 
 
-// Using template literals
+// // let baseConverter = (convert,n)=>{
+// //     while(convert>=0){
+// //         convert%n
+// //         convert = Math.floor(convert/n);
+// //     }
+// // }
+
+// Factorial of a number using recursion
+// function factorial(n) {
+//     if (n < 0) return "Factorial is not defined for negative numbers";
+//     if (n === 0 || n === 1) return 1;
+//     return n * factorial(n - 1);
+// }
+// console.log(factorial(5)); // Output: 120
+
+// // Factorial of a number using iteration
+// function factorialIterative(n) {
+//     if (n < 0) return "Factorial is not defined for negative numbers";
+//     let result = 1;
+//     for (let i = 2; i <= n; i++) {
+//         result *= i;
+//     }
+//     return result;
+// }
+// console.log(factorialIterative(0)); // Output: 1
+
+// // Using template literals
 
 
