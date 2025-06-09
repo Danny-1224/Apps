@@ -210,14 +210,27 @@
 //   console.log(removeVowels("Hello World")); // Output: "Hll Wrld"
 
 // A loop that counts the number of numeric values in an array
-  let mix = [true, 100, "hello", 50, false, 42];
-  let count = 0;
-  for(let element of mix) {
-    if (typeof element === 'number') {
-      count++;
-    }
-  }
-  console.log(count); 
+//   let mix = [true, 100, "hello", 50, false, 42];
+//   let count = 0;
+//   for(let element of mix) {
+//     if (typeof element === 'number' ) {
+//       count++;
+//     }
+//   }
+//   console.log(count); 
+
+
+// Strings reversal with for of loop
+// let stringReversal = (word)=>{
+//   let wordArray = []
+//   for(let char of word){
+//     wordArray.push(char)
+//   }
+//   console.log(wordArray.reverse().join(''))
+// }
+
+// stringReversal("Communication")
+
 
 
 // // Using template literals
