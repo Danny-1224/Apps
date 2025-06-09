@@ -231,6 +231,53 @@
 
 // stringReversal("Communication")
 
+// let scores = [80, 95, 70, 60, 100];
+// let elementGreaterThan75 = [];
+// for(let element of scores){
+//     if(element>=75){
+//         elementGreaterThan75.push(element)
+//     }
+// }
+// console.log(elementGreaterThan75);
+
+// Merge the elements of two arrays into one array. so that the length of the new array is the sum of the lenth of each arry that formed it. using loop only
+// let array1 = [1, 2, 3];
+// let array2 = [4, 5, 6];
+// let mergedArray = [];
+// for (let i = 0; i < array1.length; i++) {
+//     mergedArray.push(array1[i]);
+// }
+// for (let i = 0; i < array2.length; i++) {
+//     mergedArray.push(array2[i]);
+// }
+
+// Given a string s, find the length of the longest substring without duplicate characters
+let lengthOfLongestSubstring = (s) => {
+    let charSet = new Set();
+    let left = 0;
+    let maxLength = 0;
+
+    for (let right = 0; right < s.length; right++) {
+        while (charSet.has(s[right])) {
+            charSet.delete(s[left]);
+            left++;
+        }
+        charSet.add(s[right]);
+        maxLength = Math.max(maxLength, right - left + 1);
+    }
+    return maxLength;
+};
+// if(mergedArray.length%2==0)
+
+
+// let array1 = [1, 2, 3];
+// let array2 = [4, 5, 6];
+// let mergedArray = array1.concat(array2);
+// console.log(mergedArray); // Output: [1, 2, 3, 4, 5, 6]
+// console.log(mergedArray.length); // Output: 6
+
+
+
 
 
 // // Using template literals
