@@ -197,18 +197,32 @@
 // console.log(factorialIterative(0)); // Output: 1
 
 // a function that removes the vowels in a string. using for of loop
-let removeVowels = (str) => {
-    let vowels = "aeiouAEIOU";
-    let result = "";
-    for (let char of str) {
-        if (!vowels.includes(char)) {
-            result += char;
-        }
+// let removeVowels = (str) => {
+//     let vowels = "aeiouAEIOU";
+//     let result = "";
+//     for (let char of str) {
+//         if (!vowels.includes(char)) {
+//             result += char;
+//         }
+//     }
+//     return result;
+//   }
+//   console.log(removeVowels("Hello World")); // Output: "Hll Wrld"
+
+// A loop that counts the number of numeric values in an array
+  let mix = [true, 100, "hello", 50, false, 42];
+  let count = 0;
+  for(let element of mix) {
+    if (typeof element === 'number') {
+      count++;
     }
-    return result;
   }
-  console.log(removeVowels("Hello World")); // Output: "Hll Wrld"
+  console.log(count); 
+
 
 // // Using template literals
 
 
+//   if (mix.every(item => typeof item === 'number')) {
+//     count++;
+//   }
