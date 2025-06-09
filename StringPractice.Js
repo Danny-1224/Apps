@@ -196,6 +196,19 @@
 // }
 // console.log(factorialIterative(0)); // Output: 1
 
+// a function that removes the vowels in a string. using for of loop
+let removeVowels = (str) => {
+    let vowels = "aeiouAEIOU";
+    let result = "";
+    for (let char of str) {
+        if (!vowels.includes(char)) {
+            result += char;
+        }
+    }
+    return result;
+  }
+  console.log(removeVowels("Hello World")); // Output: "Hll Wrld"
+
 // // Using template literals
 
 
