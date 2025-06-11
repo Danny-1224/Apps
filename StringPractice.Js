@@ -252,22 +252,32 @@
 // }
 
 // Given a string s, find the length of the longest substring without duplicate characters
-let lengthOfLongestSubstring = (s) => {
-    let charSet = new Set();
-    let left = 0;
-    let maxLength = 0;
+// let lengthOfLongestSubstring = (s) => {
+//     let charSet = new Set();
+//     let left = 0;
+//     let maxLength = 0;
 
-    for (let right = 0; right < s.length; right++) {
-        while (charSet.has(s[right])) {
-            charSet.delete(s[left]);
-            left++;
-        }
-        charSet.add(s[right]);
-        maxLength = Math.max(maxLength, right - left + 1);
-    }
-    return maxLength;
-};
-// if(mergedArray.length%2==0)
+//     for (let right = 0; right < s.length; right++) {
+//         while (charSet.has(s[right])) {
+//             charSet.delete(s[left]);
+//             left++;
+//         }
+//         charSet.add(s[right]);
+//         maxLength = Math.max(maxLength, right - left + 1);
+//     }
+//     return maxLength;
+// };
+// // if(mergedArray.length%2==0)
+
+const str = "paul";
+const chars = [];
+
+for (const ch of str) {
+  chars.push(ch);
+}
+
+console.log(chars); // ['p', 'a', 'u', 'l']
+
 
 
 // let array1 = [1, 2, 3];
