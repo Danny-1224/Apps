@@ -269,14 +269,26 @@
 // };
 // // if(mergedArray.length%2==0)
 
-const str = "paul";
-const chars = [];
+// const str = "paul";
+// const chars = [];
 
-for (const ch of str) {
-  chars.push(ch);
+// for (const ch of str) {
+//   chars.push(ch);
+// }
+
+const name = "Daebnyadaddadaddadadaddadaddad";
+const len= name.length;
+const arr = [];
+const mid = Math.floor(len / 2);
+
+if((len % 2) === 0) {
+    arr.push(name[(mid-1)], name[mid]);
+}
+else{
+    arr.push(name[mid]);
 }
 
-console.log(chars); // ['p', 'a', 'u', 'l']
+console.log(arr);
 
 
 
