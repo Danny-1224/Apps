@@ -1,4 +1,4 @@
-// Snake game created with plain JavaScript by Paul Segun(Danny)
+// Snake game created with plain JavaScript by Paul Segun(brownDev)
 
 
 const domReplay = document.querySelector("#replay");

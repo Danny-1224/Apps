@@ -276,19 +276,53 @@
 //   chars.push(ch);
 // }
 
-const name = "Daebnyadaddadaddadadaddadaddad";
-const len= name.length;
-const arr = [];
-const mid = Math.floor(len / 2);
+// const name = "Daebnyadaddadaddadadaddadaddad";
+// const len= name.length;
+// const arr = [];
+// const mid = Math.floor(len / 2);
 
-if((len % 2) === 0) {
-    arr.push(name[(mid-1)], name[mid]);
-}
-else{
-    arr.push(name[mid]);
-}
+// if((len % 2) === 0) {
+//     arr.push(name[(mid-1)], name[mid]);
+// }
+// else{
+//     arr.push(name[mid]);
+// }
 
-console.log(arr);
+// console.log(arr);
+
+
+// const name = "Daebnyadaddadaddadadaddadaddad";
+// const len= name.length;
+// const arr = [];
+// const mid = Math.floor(len / 2);
+
+// if((len % 2) === 0) {
+//     arr.push(name[(mid-1)], name[mid]);
+// }
+// else{
+//     arr.push(name[mid]);
+// }
+
+// console.log(arr);
+
+
+// function pickRandomChar(str) {
+//   if (typeof str !== 'string' || str.length === 0) {
+//     return []; // Handle empty or invalid input
+//   }
+
+//   const randomIndex = Math.floor(Math.random() * str.length);
+//   const arr = [str[randomIndex]];
+//   return arr;
+// }
+
+let x = "abc";
+let y = x;
+console.log(x)
+x = "xyz";
+console.log(y); 
+
+
 
 
 
