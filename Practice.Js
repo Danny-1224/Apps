@@ -364,4 +364,5 @@ let getRandomComputerChoice =(selectedQuestionChoice)=>{
   return `The correct answer is ${selectedQuestionChoice[answerIndex]}`;
 }
 
-console.log(`Question: ${selectedQuestion.question}, choices are: ${selectedQuestionChoice}, Answer: ${selectedQuestionAnswer}`); 
+console.log(selectedQuestion.hasOwnProperty("category"))
+
