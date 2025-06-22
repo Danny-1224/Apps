@@ -316,11 +316,7 @@
 //   return arr;
 // }
 
-let x = "abc";
-let y = x;
-console.log(x)
-x = "xyz";
-console.log(y); 
+
 
 
 
@@ -342,3 +338,30 @@ console.log(y);
 //   if (mix.every(item => typeof item === 'number')) {
 //     count++;
 //   }
+
+
+
+
+
+let questions = [{category:"maths", question: "What is 2+2?",choices:["A.4","B.5","C.6"],answer:"A.4"},
+{category:"biology", question: "The basic unit of  life is?",choices:["life","cell","biology"],
+answer:"cell"},{category:"maths", question: "8*8 is__",choices:["46", "78","64"],answer:"64"},
+{category:"maths", question: "Which of these is a perfect square?",choices:["50","49","72"],
+answer:"49"},{category:"biology", question: "Soil best for cultivation is__",
+choices:["loamy","sandy","clay"],answer:"loamy"}];
+
+let getRandomQuestion = (questions)=>{
+  const randIndex = Math.floor(Math.random()*questions.length)
+  return questions[randIndex]
+}
+
+let selectedQuestion = getRandomQuestion(questions);
+let selectedQuestionChoice = selectedQuestion.choices;
+let selectedQuestionAnswer = selectedQuestion.answer;
+
+let getRandomComputerChoice =(selectedQuestionChoice)=>{
+  const answerIndex = +selectedQuestionChoice.indexOf(selectedQuestionAnswer);
+  return `The correct answer is ${selectedQuestionChoice[answerIndex]}`;
+}
+
+console.log(`Question: ${selectedQuestion.question}, choices are: ${selectedQuestionChoice}, Answer: ${selectedQuestionAnswer}`); 
