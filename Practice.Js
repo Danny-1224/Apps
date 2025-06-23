@@ -376,6 +376,7 @@ console.log(selectedQuestion.hasOwnProperty("category"))
 
 
 // implement a mutation algorithms
+// function to check if a string is a palindrome
 
 
 // chunky monkey algorithm
