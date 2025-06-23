@@ -370,6 +370,8 @@ console.log(selectedQuestion.hasOwnProperty("category"))
 
 
 
+
+
 // Builda factorial calculator
 
 
@@ -377,4 +379,9 @@ console.log(selectedQuestion.hasOwnProperty("category"))
 
 
 // chunky monkey algorithm
+chunkArrayInGroups(["a", "b", "c", "d"], 2);
+
+
+
+
 
