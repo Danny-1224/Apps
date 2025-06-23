@@ -375,3 +375,6 @@ console.log(selectedQuestion.hasOwnProperty("category"))
 
 // implement a mutation algorithms
 
+
+// chunky monkey algorithm
+
