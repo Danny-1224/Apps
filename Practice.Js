@@ -368,3 +368,7 @@ console.log(selectedQuestion.hasOwnProperty("category"))
 
 // Build a sentence Analyzer
 
+
+
+// Builda factorial calculator
+
