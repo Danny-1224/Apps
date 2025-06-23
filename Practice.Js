@@ -372,3 +372,6 @@ console.log(selectedQuestion.hasOwnProperty("category"))
 
 // Builda factorial calculator
 
+
+// implement a mutation algorithms
+
