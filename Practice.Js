@@ -408,12 +408,12 @@ console.log(selectedQuestion.hasOwnProperty("category"))*/
 // build a password generator
 // build an inventory management system
 // Build a grade app
+// Build a pyramid generator
 
 
 
 // define a sum all numbers algorithms
 
-// Build a pyramid generator
 
 
 
