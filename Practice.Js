@@ -405,8 +405,10 @@ console.log(selectedQuestion.hasOwnProperty("category"))*/
 // console.log(chunkArrayInGroups([0, 1, 2, 3, 4], 3));
 
 // implement the slice and splice methods
+// build a password generator
 
-// define a sum all numbers algoeithms
+
+// define a sum all numbers algorithms
 
 // Build a pyramid generator
 
@@ -414,5 +416,4 @@ console.log(selectedQuestion.hasOwnProperty("category"))*/
 
 // build an inventory management system
 
-// build a password generator
 
