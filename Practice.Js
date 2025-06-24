@@ -343,7 +343,7 @@
 
 
 
-let questions = [{category:"maths", question: "What is 2+2?",choices:["A.4","B.5","C.6"],answer:"A.4"},
+/*let questions = [{category:"maths", question: "What is 2+2?",choices:["A.4","B.5","C.6"],answer:"A.4"},
 {category:"biology", question: "The basic unit of  life is?",choices:["life","cell","biology"],
 answer:"cell"},{category:"maths", question: "8*8 is__",choices:["46", "78","64"],answer:"64"},
 {category:"maths", question: "Which of these is a perfect square?",choices:["50","49","72"],
@@ -364,10 +364,24 @@ let getRandomComputerChoice =(selectedQuestionChoice)=>{
   return `The correct answer is ${selectedQuestionChoice[answerIndex]}`;
 }
 
-console.log(selectedQuestion.hasOwnProperty("category"))
+console.log(selectedQuestion.hasOwnProperty("category"))*/
 
-// Build a sentence Analyzer
+// Build a sentence Analy
+let Counter = (countFor,sentence)=>{
+  let count = 0;
+  for(let char of sentence){
+    if(countFor.includes(char.toUpperCase())){
+      count++
+    }
+  }
+   return count;
+}
+let sentenceAnalyzer = (sentence)=>{
+  let allCounts = `Vowels: ${Counter('AEIOU',sentence)}         Consonants: ${Counter('BCDFGHJKLMNPQRSTVWXYZ',sentence)}        Puntuations: ${Counter(",!.:'?;-",sentence)}`
+  return allCounts;
+}
 
+console.log(sentenceAnalyzer('PLOT 12, Gladys'))
 
 
 
@@ -380,16 +394,15 @@ console.log(selectedQuestion.hasOwnProperty("category"))
 
 
 // chunky monkey algorithm
-chunkArrayInGroups(["a", "b", "c", "d"], 2);
-chunkArrayInGroups([0, 1, 2, 3, 4, 5], 3);
-function chunkArrayInGroups(arr, size) {
-    let result = [];
-    for (let i = 0; i < arr.length; i += size) {
-        result.push(arr.slice(i, i + size));
-    }
-    return result;
-}
-
+// function chunkArrayInGroups(arr, size) {
+//     let result = [];
+//     for (let i = 0; i < arr.length; i += size) {
+//         result.push(arr.slice(i, i + size));
+//     }
+//     return result;
+// }
+// console.log(chunkArrayInGroups(["a", "b", "c", "d","e"], 2));
+// console.log(chunkArrayInGroups([0, 1, 2, 3, 4], 3));
 
 
 
