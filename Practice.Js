@@ -367,21 +367,21 @@ let getRandomComputerChoice =(selectedQuestionChoice)=>{
 console.log(selectedQuestion.hasOwnProperty("category"))*/
 
 // Build a sentence Analy
-let Counter = (countFor,sentence)=>{
-  let count = 0;
-  for(let char of sentence){
-    if(countFor.includes(char.toUpperCase())){
-      count++
-    }
-  }
-   return count;
-}
-let sentenceAnalyzer = (sentence)=>{
-  let allCounts = `Vowels: ${Counter('AEIOU',sentence)}         Consonants: ${Counter('BCDFGHJKLMNPQRSTVWXYZ',sentence)}        Puntuations: ${Counter(",!.:'?;-",sentence)}`
-  return allCounts;
-}
+// let Counter = (countFor,sentence)=>{
+//   let count = 0;
+//   for(let char of sentence){
+//     if(countFor.includes(char.toUpperCase())){
+//       count++
+//     }
+//   }
+//    return count;
+// }
+// let sentenceAnalyzer = (sentence)=>{
+//   let allCounts = `Vowels: ${Counter('AEIOU',sentence)}         Consonants: ${Counter('BCDFGHJKLMNPQRSTVWXYZ',sentence)}        Puntuations: ${Counter(",!.:'?;-",sentence)}`
+//   return allCounts;
+// }
 
-console.log(sentenceAnalyzer('PLOT 12, Gladys'))
+// console.log(sentenceAnalyzer('PLOT 12, Gladys'))
 
 
 
@@ -404,6 +404,15 @@ console.log(sentenceAnalyzer('PLOT 12, Gladys'))
 // console.log(chunkArrayInGroups(["a", "b", "c", "d","e"], 2));
 // console.log(chunkArrayInGroups([0, 1, 2, 3, 4], 3));
 
+// implement the slice and splice methods
 
+// define a sum all numbers algoeithms
 
+// Build a pyramid generator
+
+// Build a grade app
+
+// build an inventory management system
+
+// build a password generator
 
