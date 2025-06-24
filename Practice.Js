@@ -407,6 +407,7 @@ console.log(selectedQuestion.hasOwnProperty("category"))*/
 // implement the slice and splice methods
 // build a password generator
 // build an inventory management system
+// Build a grade app
 
 
 
@@ -414,7 +415,6 @@ console.log(selectedQuestion.hasOwnProperty("category"))*/
 
 // Build a pyramid generator
 
-// Build a grade app
 
 
 
