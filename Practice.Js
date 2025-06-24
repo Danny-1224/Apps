@@ -409,10 +409,11 @@ console.log(selectedQuestion.hasOwnProperty("category"))*/
 // build an inventory management system
 // Build a grade app
 // Build a pyramid generator
-
-
-
 // define a sum all numbers algorithms
+
+
+
+
 
 
 
