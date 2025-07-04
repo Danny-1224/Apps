@@ -1240,14 +1240,14 @@ const quiz = {
 };
 
 const newQuiz = {
-  ...quiz,
   questions: quiz.questions.map(q => ({
     ...q,
     answered: false
-  }))
+  })),
+  ...quiz
 };
 
-console.log(newQuiz);
+console.log(newQuiz)
 
 
 
