@@ -1247,6 +1247,8 @@ const newQuiz = {
   }))
 };
 
+console.log(newQuiz);
+
 
 
 
