@@ -1230,18 +1230,14 @@ function generateUserQuestions() {
 }
 
 // console.log(generateUserQuestions())
-const users = [
-  { name: "Segun", age: 21 },
-  { name: "Ada", age: 19 },
-  { name: "John", age: 23 }
-];
+const newQuiz = {
+  ...quiz,
+  questions: quiz.questions.map(q => ({
+    ...q,
+    answered: false
+  }))
+};
 
-const numbered = users.map((user, index) => ({
-  serial: index + 1,
-  ...user
-}));
-
-console.log(numbered);
 
 
 
