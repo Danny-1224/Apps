@@ -1230,13 +1230,19 @@ function generateUserQuestions() {
 }
 
 // console.log(generateUserQuestions())
-const arr = [10, 20, 30];
+const users = [
+  { name: "Segun", age: 21 },
+  { name: "Ada", age: 19 },
+  { name: "John", age: 23 }
+];
 
-arr.map((value, i, wholeArr) => {
-  console.log("Value:", value);       // current item
-  // console.log("Index:", i);           // index of item
-  // console.log("Original:", wholeArr); // the full array
-});
+const numbered = users.map((user, index) => ({
+  serial: index + 1,
+  ...user
+}));
+
+console.log(numbered);
+
 
 
 
