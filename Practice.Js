@@ -1230,6 +1230,15 @@ function generateUserQuestions() {
 }
 
 // console.log(generateUserQuestions())
+
+const quiz = {
+  title: "Maths",
+  questions: [
+    { q: "2+2", a: 4 },
+    { q: "3*3", a: 9 }
+  ]
+};
+
 const newQuiz = {
   ...quiz,
   questions: quiz.questions.map(q => ({
@@ -1237,6 +1246,8 @@ const newQuiz = {
     answered: false
   }))
 };
+
+
 
 
 
